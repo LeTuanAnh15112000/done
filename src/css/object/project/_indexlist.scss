@@ -1,0 +1,79 @@
+// page index
+
+// background
+.c-background{
+    &__scroll{
+        margin-top: 68px;
+        @include media-breakpoint-sp{
+            margin-top: 50px;
+        }
+    }
+    &__about{
+        margin-top: 160px;
+        @include media-breakpoint-sp{
+            margin-top: 33px;
+        }
+    }
+}
+// mainvisual
+.c-mainvisual{
+    margin-top: 110px;
+    @include media-breakpoint-sp{
+        margin-top: 128px;
+    }
+}
+// shooting    
+.p-shooting{
+    margin-top: 200px;
+    @include media-breakpoint-sp{
+        margin-top: 136px;
+    }
+    .c-shooting{
+        &__online{
+            margin-top: 80px;
+            @include media-breakpoint-sp{
+                margin-top: 56px;
+            }
+        }
+    }
+}
+//news
+.p-news {
+    margin-top: 200px;
+    @include media-breakpoint-sp{
+        margin-top: 137px;
+    }
+}
+// monoca
+.p-monoca{
+    margin-top: 202px;
+    @include media-breakpoint-sp{
+        margin-top: 136px;
+    }
+}
+// store
+.p-store{
+    margin-top: 192px;
+    @include media-breakpoint-sp{
+        margin-top: 160px;
+        .l-container{
+            width: 100%;
+        }
+    }
+}
+// slider
+.p-slider{
+    margin-top: 74px;
+    @include media-breakpoint-sp{
+        margin-top: 0px;
+    }
+}
+.p-recruitment{
+    margin-top: 198px;
+    @include media-breakpoint-sp{
+        margin-top: 132px;
+        .l-container{
+            width: 100%;
+        }
+    }
+}

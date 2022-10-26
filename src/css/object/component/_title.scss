@@ -1,0 +1,65 @@
+/* title */ 
+.u-contain{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    @include media-breakpoint-sp{
+        margin: 0 10px;
+    }
+    &.--edit1{
+        padding-top: 62px;
+        letter-spacing: 2.2px;
+        .u-title{
+            color: #000;
+            background: #fff;
+        }
+    }
+}
+
+.u-title{
+        color: #fff;
+        background: #000;
+        line-height: 1.6;
+        font-size: ( 36px / $font-size) * 1rem;
+        font-weight: bold;
+        position: relative;
+        padding: 0 32px;
+        letter-spacing: 4.6px;
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+        word-break: break-all;
+        @include media-breakpoint-sp{
+            font-size: ( 34px / $font-size) * 1rem;
+            line-height: 1.4;
+            padding: 0 30px;
+            letter-spacing: 2px;
+        }
+        
+        &.--edit2{
+            letter-spacing: 1.2px;
+        }
+}
+
+.u-title3{
+    font-size: ( 28px / $font-size) * 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+// img
+.u-left{
+    margin-right: 10px;
+    @include media-breakpoint-sp{
+        &.u-width{
+            width: 26px;
+        }
+    }
+}
+.u-right{
+    margin-left: 10px;
+    @include media-breakpoint-sp{
+        &.u-width{
+            width: 26px;
+        }
+    }
+}

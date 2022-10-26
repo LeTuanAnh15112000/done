@@ -1,0 +1,44 @@
+/* mainvisual */ 
+
+.c-mainvisual {
+    position: relative;
+    // img
+    &__item{
+        @include media-breakpoint-tab{
+            height: 340px;
+            .slick-list, .slick-track{
+                height: 100%;
+            }
+       }
+        @include media-breakpoint-sp{
+            height: 264px;
+            .slick-list, .slick-track{
+                height: 100%;
+            }
+        }
+    }
+    &__img{
+        position: absolute;
+        bottom: 25px;
+        left: 18.5%;
+        width: 24.5%;
+        @include media-breakpoint-tab{
+             width: 30%;
+        }
+        @include media-breakpoint-sp{
+            width: unset;
+            bottom: 4px;
+            left: 4.1%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include media-breakpoint-sp{
+                max-width: 196px;
+                width: 96%;
+                height: 112px;
+            }
+        }
+    }
+}

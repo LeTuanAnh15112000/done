@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title><%= getHeadPageTitle(); %></title>
+	<meta name="description" content="<%= getDescription(); %>">
+	<meta property="og:locale" content="ja_JP">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="<%= getSiteUrl(); %>">
+	<meta property="og:title" content="<%= getSiteTitle(); %>">
+	<meta property="og:description" content="<%= getDescription(); %>">
+	<meta property="og:image" content="<%= getSiteUrl(); %>/ogp.jpg">
+	<meta property="og:site_name" content="<%= getSiteTitle(); %>">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=no,email=no,address=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="<%= getRelativePath('/favicon.ico'); %>">
+	<link rel="apple-touch-icon" href="<%= getRelativePath('/apple-touch-icon.png'); %>">
+	<link rel="stylesheet" href="<%= getRelativePath('/css/slick.css'); %>">
+	<link rel="stylesheet" href="<%= getRelativePath('/style.css'); %>">
+	<!-- preload -->
+	<link rel="preload" href="<%= getRelativePath('/images/index/img_mainvisual01.jpg'); %>" as="image">
+</head>
+<body class="<%= getBodyClass(); %>">
+	<div id="all">
+		<% if(getPageId() == 'index') { %>
+		<header class="l-header">
+			<div class="l-header__inner">
+				<div class="l-header__content">
+					<div class="l-header__logo">
+						<h1><a href="<%= getRelativePath('/'); %>"><img src="<%= getRelativePath('/image/logo.png'); %>" alt="Hiru To yoru"></a></h1>
+					</div>
+					<nav class="l-header__nav">
+						<div class="l-header__nav__inner">
+							<div class="l-header__contents">
+								<ul class="l-header__list">
+									<li class="u-icon u-none">
+										<a href="<%= getRelativePath('/'); %>"><img src="<%= getRelativePath('/image/telegram.png'); %>" alt="telegram"></a><br>
+										<a href="<%= getRelativePath('/'); %>"><img src="<%= getRelativePath('/image/facebook.png'); %>" alt="facebook"></a>
+									</li>
+									<li class="l-header__item --subitem">
+										<a href="<%= getRelativePath('/'); %>">
+											<span>ひる</span>
+										</a>
+									</li>
+									<li class="l-header__item --subitem">
+										<a href="<%= getRelativePath('/'); %>">
+											<span>よる</span>
+										</a>
+									</li>
+									<li class="l-header__item --subitem">
+										<a href="<%= getRelativePath('/'); %>">
+											<span>ショッピング</span>
+										</a>
+									</li>
+									<li class="l-header__item --subitem">
+										<a href="<%= getRelativePath('/'); %>">
+											<span>店舗情報</span>
+										</a>
+									</li>
+									<li class="l-header__item --subitem">
+										<a href="<%= getRelativePath('/'); %>">
+											<span>採用情報</span>
+										</a>
+									</li>
+									<li class="l-header__item --subitem">
+										<a href="tel:092-713-2008" class="c-header__tel">
+											<span class="c-header__tel --text">TEL</span>092-713-2008
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+					<div class="l-menu__button">
+						<div>
+							<span></span>
+							<span></span>
+							<span></span>
+							MENU
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<% }  %>
+		<!-- /#header -->
+		<div class="l-content">
+			<main class="l-primary"><% if (getPageId() == 'index') { %>
+				<section class="c-background">
+					<div class="c-background__hiru">
+						<figure>
+							<img src="<%= getRelativePath('/image/fukuoka.png'); %>" alt="fukuoka">
+						</figure>
+					</div>
+					<div class="c-background__scroll"><span>SCROLL</span></div>
+					<div class="u-only__sp">
+						<a href="tel:0927132008">
+							<img src="<%= getRelativePath('/image/telphone.svg'); %>" alt="電話をかける">
+							電話をかける
+						</a>
+					</div>
+					<div class="c-background__about">
+						<div class="u-contain">
+							<img class="u-left u-width" src="<%= getRelativePath('/image/left.png'); %>" alt="「ひるとよる」について">
+							<h2 class="u-title">
+								「ひるとよる」<br class="u-only__sp">について
+							</h2>
+							<img class="u-right u-width" src="<%= getRelativePath('/image/right.png'); %>" alt="「ひるとよる」について">
+						</div>
+						<p class="c-background__text">
+							福岡市大名にあるらーめん居酒屋「博多らーめん・ちゃんぽん ひるとよる」<br>
+							ひるはランチ、よるは屋台を思わせる雰囲気で、焼き鳥やおでんなど、一品料理も豊富に揃えています。<br>
+							軽やかな味わいが飲みの締めにもぴったりならーめんと、コクが深い味噌が旨いちゃんぽんを是非ご賞味ください。<br>
+							「博多らーめん・ちゃんぽん　ひるとよる」に是非お越しください。
+						</p>
+					</div>
+					<div class="u-icon">
+						<figure>
+							<a href="<%= getRelativePath('/'); %>"><img src="<%= getRelativePath('/image/telegram.png'); %>" alt="telegram"></a><br>
+							<a href="<%= getRelativePath('/'); %>"><img src="<%= getRelativePath('/image/facebook.png'); %>" alt="facebook"></a>
+						</figure>
+					</div>
+				</section><% } %>
+				<%- include('_breadline'); %>
+				<article class="<%= getArticleClass(); %>">

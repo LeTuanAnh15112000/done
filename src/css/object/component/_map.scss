@@ -1,0 +1,12 @@
+.u-map{
+    width: 58.3%;
+    @include media-breakpoint-sp{
+        width: 100%;
+        height: 228px;
+    }
+ 
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+}

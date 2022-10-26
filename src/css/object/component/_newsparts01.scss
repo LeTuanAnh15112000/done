@@ -1,0 +1,48 @@
+/* newsparts */ 
+
+.c-news{
+    &__list{
+        margin-top: 80px;
+        @include media-breakpoint-sp{
+            margin-top: 52px;
+        }
+    }
+    &__item {
+        padding: 14px 10px;
+        border-bottom: 2px solid #000;
+        @include media-breakpoint-sp{
+            padding: 13px 10px;
+        }
+        &:first-child{
+        border-top: 2px solid #000;
+        }
+        &:hover{
+            opacity: 0.7;
+            cursor: pointer;
+        }
+    }
+    &__day {
+        display: inline-block;
+        margin-right: 1em;
+    }
+    &__cat {
+        display: inline-block;
+    }
+    &__link{
+        display: flex;
+        justify-content: space-between;
+        @include media-breakpoint-sp{
+            img{
+                margin-top: 24px;
+            }
+        }
+    }
+    &__contain{
+        display: flex;
+        @include media-breakpoint-sp{
+            flex-direction: column;
+        }
+    }
+}
+
+

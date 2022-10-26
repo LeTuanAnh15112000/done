@@ -1,0 +1,51 @@
+				</article>
+				<!-- /.<%= getArticleClass('.'); %> -->
+			</main>
+			<!-- /#primary -->
+		</div>
+		<!-- /#content -->
+		<footer class="l-footer">
+			<div class="l-footer__contain u-center__text">
+				<div class="l-footer__img">
+					<figure>
+						<a href="<%= getRelativePath('/'); %>">
+							<img src="<%= getRelativePath('/image/logo_footer.png'); %>" alt="logo_footer">
+						</a>
+					</figure>
+				</div>
+				<div class="l-footer__online" style="background: url(<%= getRelativePath('/image/online_shop.jpg'); %>) no-repeat center / cover;">
+					<span class="l-footer__border">
+						<img src="<%= getRelativePath('/image/cart.png'); %>" alt="オンラインショップ">
+						オンラインショップ
+					</span>
+				</div>
+				<nav class="l-footer__menu">
+					<ul>
+						<li><a href="#">ひる</a></li>
+						<li><a href="#">よる</a></li>
+						<li><a href="#">ショッピング</a></li>
+						<li><a href="#">店舗情報</a></li>
+						<li><a href="#">採用情報</a></li>
+					</ul>
+				</nav>
+				<div class="l-footer__copyright">©2022 ひるとよる All Rights Reserved.</div>
+			</div>
+		</footer>
+		<!-- /#footer -->
+	</div>
+	<!-- /#all -->
+	<script src="<%= getRelativePath('/js/jquery-3.6.0.min.js'); %>"></script>
+	<script src="<%= getRelativePath('/js/script.js'); %>"></script>
+	<% if(getPageId() == 'index' || getPageId() == 'jsparts_slider') { %>
+		<script src="<%= getRelativePath('/js/slick.min.js'); %>"></script>
+		<script src="<%= getRelativePath('/js/index.js'); %>"></script>
+	<% } else if(getPageId() == 'headermv_mv-youtube') { %>
+		<script src="<%= getRelativePath('/js/jquery.mb.YTPlayer.min.js'); %>"></script>
+		<script>
+			$(function() {
+				$('#videoPlay').YTPlayer(); //動画の呼び出し部分に指定したID
+			});
+		</script>
+	<% } %>
+</body>
+</html>
