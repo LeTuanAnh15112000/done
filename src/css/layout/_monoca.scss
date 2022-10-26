@@ -1,17 +1,22 @@
 .c-monoca{
     &__img{
-        margin: 59px 0 8px 0;
-        figure{
-            display: inline-block;
+        margin: 75px 0 25px 0;
+        display: flex;
+        justify-content: space-between;
+        @include media-breakpoint-sp{
+             margin: 57px 0 9px 0;
+        }
+        &trengh{
             width: calc( (100% / 2) - 10px );
+            @include media-breakpoint-sp{
+                width: calc( (100% / 2) - 6px );
+            }
             img{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
-            &:first-child{
-                margin-right: 15px;
-            }
+          
         }
     }
     &__contain{

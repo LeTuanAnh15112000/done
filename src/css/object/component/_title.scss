@@ -9,9 +9,13 @@
     &.--edit1{
         padding-top: 62px;
         letter-spacing: 2.2px;
+        @include media-breakpoint-sp{
+            padding-top: 52px;
+        }
         .u-title{
             color: #000;
             background: #fff;
+          
         }
     }
 }
